@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khalid Issa - CSCI 355 - Assignment 08</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Khalid Issa's Webpage</h1>
+    <nav>
+      <ul class="menu">
+        <li>Course
+          <ul class="submenu">
+            <li><a href="https://www.amazon.com/Computer-Networking-Top-Down-Approach/dp/0136681554" target="_blank">Kurose & Ross</a></li>
+            <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+            <li><a href="https://www.geeksforgeeks.org/web-development/" target="_blank">GeeksForGeeks</a></li>
+          </ul>
+        </li>
+        <li>Browser
+          <ul class="submenu">
+            <li><a href="#browser-info" onclick="showBrowserInfo()">Show Info</a></li>
+          </ul>
+        </li>
+        <li>Configuration
+          <ul class="submenu">
+            <li><a href="#password-section">Password</a></li>
+          </ul>
+        </li>
+        <li>About
+          <ul class="submenu">
+            <li><a href="#about">Developer</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="browser-info">
+      <h2>Browser Information</h2>
+      <div id="browserData"></div>
+    </section>
+
+    <section id="password-section">
+      <h2>Password Validator</h2>
+      <input type="password" id="password" placeholder="Enter password" oninput="validatePassword()" />
+      <p id="password-msg"></p>
+    </section>
+
+    <section id="about">
+      <h2>About the Developer</h2>
+      <p>Hello! I'm Khalid Issa, a student in CSCI 355 with Professor Teitelman at Queens College. This webpage was created as part of my web technologies assignment to demonstrate HTML, CSS, and JavaScript integration. I am an avid sports fan as I watch the NBA and the NFL mainly. I also like playing video games on my spare time, which is rarely. I also enjoy coding when I'm not doing my other hobbies.</p>
+      <img src="khalid.jpg" alt="Khalid Issa" />
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="mailto:khalidissa530@email.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br />
+        <input type="text" name="name" /><br />
+        <label for="message">Message:</label><br />
+        <textarea name="message" rows="4" cols="30"></textarea><br />
+        <input type="submit" value="Send" />
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
